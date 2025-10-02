@@ -25,5 +25,5 @@ conn.commit()
 print(f"Seus dados foram salvos com sucesso , {nome}")
 
 cursor.execute("SELECT * FROM pessoas")
-for curso in cursor:
-    print(f" CPF : {cpf}  , nome : {nome} , idade :  {idade}")
+for linha in cursor:
+    print(f" CPF : {linha[0]}  , nome :{linha[1]} , idade :{linha[2]}")
